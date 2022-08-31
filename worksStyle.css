@@ -1,0 +1,33 @@
+img 
+{
+    transition: all .4s ease;
+    filter: saturate(1);
+    margin-inline: 0 auto;
+    transition: all .5s ease;
+    
+}
+
+img:hover 
+{
+    /* -webkit-filter: grayscale(0%) */
+    filter: saturate(0);
+    transform: scale(.97);
+
+}
+.imgWrapper
+{
+    position: relative;
+}
+
+.imgWrapper .mainHeading
+{
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase; 
+    pointer-events: none;
+
+}

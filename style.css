@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Monoton&family=Poiret+One&family=Poppins:wght@400;500;600;700;800;900&family=Silkscreen:wght@400;700&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: poppins;
+
+}
+html, body 
+{
+    overflow-x: hidden;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+i 
+{
+    font-size: 1.8rem;
+}
+li 
+{
+    font-size: 1.45rem;
+    list-style: none;
+}
+
+.mainHeading
+{
+    font-size: 3.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+p
+{
+    font-size: 1.55rem;
+    line-height: 2;
+    color: rgb(197, 197, 197);
+}
+hr 
+{
+    width: 80%;
+    margin: auto;
+    border: 1px solid rgb(83, 83, 83);
+}
+
+
+
+/* styling */
+body 
+{
+    background-color: black;
+}
+
+.padding
+{
+    padding: 5rem 10rem;
+
+}
+/* header */
+header
+{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo
+{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(194, 0, 0);
+}
+.navLink  ul
+{
+    display: flex;
+    align-items: center;
+}
+.navLink a
+{
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+    transition: all .5s ease;
+}
+.navLink a i 
+{
+    transition: all .5s ease;
+}
+.navLink a:hover i
+{
+    transform: translateX(10px);
+}
+
+/* above img content */
+
+
+.aboveContent .mainHeading
+{
+    font-size: 7.5rem;
+    height: 300px;
+}
+
+
+img
+{
+    width: 100%;
+    margin: 3rem 0;
+    cursor: pointer;
+    
+}
+
+/* below content */
+
+.belowContent
+{
+    margin: 0rem 0 3rem;
+    opacity: .2;
+    transform: translateX(-150px);
+    transition: .5s ease;
+}
+
+.belowContent h1 
+{
+    margin: 2rem 0;
+    line-height: 1.25;
+}
+
+/* subFooter */
+
+.subFooter
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0;
+    opacity: .2;
+    transform: translateX(-150px);
+    transition: .5s ease;
+   
+}
+.footerSubheading
+{
+    color: grey;
+    font-size: 1.25rem;
+}
+.subFooter>div 
+{
+    display: flex;    
+
+}
+.cllintNames
+{
+   margin: 0 0 0 3rem;
+}
+
+.cllintNames li 
+{
+    line-height: 2;
+    text-transform: capitalize;
+}
+
+/* footer */
+
+footer
+{
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h1 span 
+{
+    color: red;
+}
+
+
+.footerContact
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContact div 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.footerHeadingDiv
+{
+    padding: 2rem;
+    transform: perspective(1000);
+    transform-style: preserve-3d;
+    cursor: pointer;
+
+}
+.footerHeadingDiv h1 
+{
+    transform: translateZ(20px)
+}
+.footerContact div p 
+{
+    margin:0 0 0 1.5rem;
+}
+footer i, footer a
+{
+    transition:  all .5s ease;
+    cursor: pointer;
+}
+
+footer i:hover, footer a:hover
+{
+    transform: translateY(-20px);
+}
+
+
+
+
+.action
+{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
+
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .padding 
+    {
+        padding: 4rem 5rem;
+    }
+    .aboveContent .mainHeading
+    {
+        font-size: 5.5rem;
+        height: 250px;
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:768px) {
+    .padding 
+    {
+        padding: 3rem 3rem;
+    }
+    .mainHeading
+    {
+        font-size: 2.85rem;
+    }
+    p, li
+    {
+        font-size: 1.4rem;
+    }
+    hr 
+    {
+        width: 85%;
+    }
+    .aboveContent .mainHeading
+    {
+        font-size: 3.8rem;
+        height: 150px;
+    }
+    /* belowCOntetn */
+    .belowContent
+    {
+        margin:0 0 2rem;
+    }
+
+
+    /* subfooter */
+
+    .subFooter
+    {
+        flex-direction: column;
+        
+    }
+    .subFooter>div 
+    {
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cllintNames
+    {
+        margin: 0;
+        
+    }
+
+    /* footer */
+
+    footer 
+    {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:425px) {
+    
+    .padding 
+    {
+        padding: 1rem 2rem;
+    }
+    .mainHeading
+    {
+        font-size: 1.85rem;
+    }
+    p, li,a
+    {
+        font-size: 1.15rem;
+ 
+    }
+    hr 
+    {
+        width: 85%;
+    }
+    
+    header 
+    {
+        padding: 0;
+    }
+    .log 
+    {
+        width: 20px;
+        height: 20px;
+    }
+    .navLink  ul
+    {
+        flex-direction: column;
+        text-align: right;
+    }
+
+
+    /* above content */
+    .aboveContent .mainHeading
+    {
+        font-size: 2.8rem;
+        margin-top: 2rem;
+        height: 180px;
+    }
+    /* belowCOntetn */
+    .belowContent
+    {
+        margin:0 0 2rem;
+    }
+
+
+    /* subfooter */
+
+    .subFooter
+    {
+        flex-direction: column;
+        
+    }
+    .subFooter>div 
+    {
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cllintNames
+    {
+        margin: 0;
+        
+    }
+
+    /* footer */
+
+    footer 
+    {
+        flex-direction: column;
+    }
+}
+
