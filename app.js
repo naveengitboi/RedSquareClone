@@ -1,3 +1,7 @@
+
+
+//////////scrolling animation
+
 window.addEventListener('scroll', () =>{
     let belowContent = document.querySelector('.belowContent')
     let belowContentPosition = belowContent.getBoundingClientRect().top
@@ -26,6 +30,12 @@ window.addEventListener('scroll', () =>{
  
 })
 
+
+
+
+
+///heading animation
+
 let i = 0
 let Text = `The agency for what comes next,`
 
@@ -41,3 +51,48 @@ function typing()
 }
 
 typing()
+
+
+// nug container 
+
+const nugContainer = document.querySelector('.nugsContainer')
+const nugBtn = document.querySelector('.nugBtn')
+
+nugBtn.addEventListener('click', popUp)
+
+function popUp(){
+    nugContainer.classList.toggle('nugactive')
+}
+
+
+// ///////////// nugs editing tick and add
+
+
+
+
+const tick = document.querySelector('.doneCheck')
+const nugadded = document.querySelector('.nugAdded')
+const input = document.querySelector('input')
+
+nugadded.addEventListener('click', doSomething)
+
+
+function doSomething() {
+    nugadded.style.transform = 'rotate(45deg)'
+    tick.style.opacity = '1'
+    tick.style.transform = 'scale(1)'
+    input.value = ''
+    nugadded.style.opacity = '0'
+    return closeit
+
+}
+function closeit(){
+    nugadded.style.transform = 'rotate(0deg)'
+    tick.style.opacity = '0'
+    tick.style.transform = 'scale(0)'
+    nugadded.style.opacity = '1'
+}
+setInterval(closeit, 5800)
+
+
+

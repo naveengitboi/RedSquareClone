@@ -13,6 +13,7 @@
 html, body 
 {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 a
@@ -232,8 +233,86 @@ footer i:hover, footer a:hover
     transform: translateX(0);
 }
 
+/* nugs container */
+
+.nugsContainer 
+{
+    width: 90vw;
+    height: 0;
+    overflow: hidden;
+    background-color: rgb(71, 71, 71);
+    color: white;
+    margin: 0 auto;
+    padding: 4rem;
+    border-radius: 1.75rem 1.75rem 0 0;
+    transition: .5s ease-in;
+}
+.nugBtn 
+{
+    z-index: 5;
+}
+
+.nugactive
+{
+    height: auto;
+}
+
+.nugsContainer>div 
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+.nugInsideConta
+{
+    margin-bottom: 2.5rem;
+
+}
+.nugsHeadingDiv form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.85rem;
+}
+.nugsHeadingDiv form i 
+{
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.nugsHeadingDiv form input
+{
+    background-color: rgb(255, 255, 255);
+
+    padding: .75rem 1.85rem;
+    width: 400px;
+    margin-right: 1.75rem;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 1.25rem;
+    color: rgb(0, 0, 0);
+    font-family: poppins;
+    letter-spacing: 1.25px;
+    transform: .5s ease;
+}
+.doneCheck 
+{
+    opacity: 0;
+    color: rgb(8, 255, 8);
+    transform: scale(0);
+
+}
 
 
+.policyNever
+{
+    margin-top: 1rem;
+    padding: 1rem 1.8rem;
+    text-decoration: underline;
+}
 
 
 
@@ -246,6 +325,23 @@ footer i:hover, footer a:hover
     {
         font-size: 5.5rem;
         height: 250px;
+    }
+    .nugsContainer
+    {
+        width: 100%;
+        padding: 1rem;
+    }
+    .nugInsideConta
+    {
+        flex-direction: column;
+    }
+    .nugInsideConta div 
+    {
+        margin: 1.5rem;
+    }
+    .nugsHeadingDiv form
+    {
+        display: block;
     }
 }
 
@@ -301,6 +397,26 @@ footer i:hover, footer a:hover
     footer 
     {
         flex-direction: column;
+    }
+
+    /* nug div */
+
+    .nugsContainer
+    {
+        width: 100%;
+        padding: 1rem;
+    }
+    .nugInsideConta
+    {
+        flex-direction: column;
+    }
+    .nugInsideConta div 
+    {
+        margin: 1.5rem;
+    }
+    .nugsHeadingDiv form
+    {
+        display: block;
     }
 }
 
@@ -377,6 +493,34 @@ footer i:hover, footer a:hover
     footer 
     {
         flex-direction: column;
+    }
+
+    /* nug div */
+
+    .nugsContainer
+    {
+        width: 100%;
+        padding: 1rem;
+    }
+    .nugInsideConta
+    {
+        flex-direction: column;
+    }
+    .nugInsideConta div 
+    {
+        margin: 1.5rem;
+    }
+    .nugsHeadingDiv form
+    {
+        display: flex;
+
+        
+    }
+    .nugsHeadingDiv form input
+    {
+        width: 250px;
+        font-size: 1rem;
+        padding: .5rem 1rem;
     }
 }
 
